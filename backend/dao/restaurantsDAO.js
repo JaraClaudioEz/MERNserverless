@@ -1,3 +1,5 @@
+//DAO: Data Access Object
+
 let restaurants //To store a reference to our database
 
 export default class RestaurantsDAO {
