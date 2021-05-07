@@ -1,5 +1,5 @@
-import MongoDB from "mongodb"
-const ObjectId = MongoDB.ObjectID
+import mongodb from "mongodb"
+const ObjectId = mongodb.ObjectID
 
 let reviews
 
