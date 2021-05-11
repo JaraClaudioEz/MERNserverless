@@ -3,15 +3,15 @@ import http from "../http-common";
 //Here will be set all the functions that are going to make all the api calls
 class RestaurantDataService {
     getAll(page = 0) {
-        return http.get(`restaurants?page=${page}`);
+        return http.get(`?page=${page}`);
     }
 
     get(id) {
-        return http.get(`/restaurant?id=${id}`);
+        return http.get(`?id=${id}`);
     }
 
     find(query, by = "name", page = 0) { //query is the search term
-        return http.get(`restaurants?${by}=${query}&page=${page}`);
+        return http.get(`?${by}=${query}&page=${page}`);
     }
 
     createReview(data) {

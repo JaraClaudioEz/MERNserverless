@@ -1,5 +1,4 @@
 //This helper file will set up Axios to handle CRUD operations
-
 import axios from "axios";
 
 export default axios.create({
@@ -7,4 +6,4 @@ export default axios.create({
     headers: {
         "Content-type": "application/json"
     }
-})
+});
