@@ -22,7 +22,7 @@ class RestaurantDataService {
         return http.put("/review-edit", data);
     }
 
-    deleteReview(id, userId) {
+    deleteReview(id, userId) { //This is not the best practice to delete data
         return http.delete(`/review-delete?id=${id}`, { data: { user_id: userId } });
     }
 
