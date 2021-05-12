@@ -35,7 +35,7 @@ export default class RestaurantsDAO {
                 query = { "cuisine": { $eq: filters["cuisine"] } } //cuisine is a db field
             }
             else if ("zipcode" in filters) {
-                query = { "adress.zipcode": { $eq: filters["zipcode"] } } //adress.zipcode is a db filed
+                query = { "address.zipcode": { $eq: filters["zipcode"] } } //address.zipcode is a db field
             }
         }
 

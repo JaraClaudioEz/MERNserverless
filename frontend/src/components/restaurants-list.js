@@ -89,8 +89,8 @@ const RestaurantsList = props => { //To take the props and use them
     };
 
     return (
-        <div>
-          <div className="row pb-1">
+        <div className="container">
+          <div className="row pb-3">
             <div className="input-group col-lg-4">
               <input
                 type="text"
