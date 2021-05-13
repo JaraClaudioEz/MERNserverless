@@ -1,17 +1,17 @@
 import http from "../http-common";
 
-//Here will be set all the functions that are going to make all the api calls
+//Here will be set all the functions that are going to make all api calls
 class RestaurantDataService {
     getAll(page = 0) {
-        return http.get(`?page=${page}`);
+        return http.get(`restaurants?page=${page}`);
     }
 
     get(id) {
-        return http.get(`?id=${id}`);
+        return http.get(`restaurant?id=${id}`); //Realm only acepts query parameter instead a path parameter used in node
     }
 
     find(query, by = "name", page = 0) { //query is the search term
-        return http.get(`?${by}=${query}&page=${page}`);
+        return http.get(`restaurants?${by}=${query}&page=${page}`);
     }
 
     createReview(data) {
