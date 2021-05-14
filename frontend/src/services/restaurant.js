@@ -7,7 +7,7 @@ class RestaurantDataService {
     }
 
     get(id) {
-        return http.get(`?id=${id}`);
+        return http.get(`/id/${id}`); //Here we use path parameter
     }
 
     find(query, by = "name", page = 0) { //query is the search term
@@ -15,11 +15,11 @@ class RestaurantDataService {
     }
 
     createReview(data) {
-        return http.post("/review-new", data);
+        return http.post("/review", data);
     }
 
     updateReview(data) {
-        return http.put("/review-edit", data);
+        return http.put("/review", data);
     }
 
     deleteReview(id, userId) { //This is not the best practice to delete data
